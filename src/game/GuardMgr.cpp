@@ -411,7 +411,7 @@ bool GuardMgr::SummonGuard(Creature* pCivilian, Player* pEnemy)
     auto itr = m_mAreaGuardInfo.find(areaId);
 
     if (itr == m_mAreaGuardInfo.end())
-    {;
+    {
         pCivilian->CallNearestGuard(pEnemy);
         return true;
     }
